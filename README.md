@@ -4,7 +4,6 @@ This page contains information for getting started with python.
 
 ## Create Virtual Environment
 
-
 * Open the Command Palette (**Ctrl+Shift+P**), start typing the **Python: Create Environment** command to search, and then select the command.
 * The command presents a list of environment types, Venv or Conda. For this example, select  **Venv** .
 * After selecting the interpreter, a notification will show the progress of the environment creation and the environment folder (`/.venv`) will appear in your workspace.
@@ -27,3 +26,17 @@ python3 -m pip install numpy
 ```
 
 Online Reference - [Get Started Tutorial for Python in Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial#_install-and-use-packages)
+
+## Requirements File
+
+Create or update a requirements file.
+
+```bash
+pip freeze > requirements.txt
+```
+
+Install a requirements file.
+
+```
+pip install -r requirements.txt
+```
